@@ -1,0 +1,45 @@
+//Task1
+fun main() {
+    println("Cafeteria Schedule")
+    println()
+
+    // Define the current day
+    val currentDay = "Thursday"
+
+    // Using if-else conditions to check the day's opening hours
+    if (currentDay == "Monday") {
+        println("On $currentDay, the hours are 8:00 AM to 12:00 PM (08:00 - 12:00)")
+    } else if (currentDay == "Tuesday" || currentDay == "Wednesday" || currentDay == "Thursday") {
+        println("On $currentDay, the hours are 8:00 AM to 6:00 PM (08:00 - 18:00)")
+    } else if (currentDay == "Friday") {
+        println("On $currentDay, the hours are 8:00 AM to 9:00 PM (08:00 - 21:00)")
+    } else if (currentDay == "Saturday") {
+        println("On $currentDay, the hours are 9:00 AM to 4:00 PM (09:00 - 16:00)")
+    } else if (currentDay == "Sunday") {
+        println("On $currentDay, the hours are 8:00 AM to 4:00 PM (08:00 - 16:00)")
+    } else {
+        println("Invalid day selected.")
+    }
+}
+
+//Task2
+
+fun getPoints(basePoints: Int, boost: Int): Int{
+    return basePoints * boost
+}
+
+fun main() {
+    println("Task 2: Game")
+    println()
+    var score = 0;
+    println(score)
+    score += getPoints(10, 1)
+    println(score)
+    score += getPoints(20, 2)
+    println(score)
+    score+= getPoints(-10, 1)
+    println(score)
+    score += getPoints(5,3)
+    println(score)
+    score += getPoints(-15, 2)
+}
